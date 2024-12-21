@@ -1,0 +1,106 @@
+:root {
+  --coffee: #9F5C44;
+  --dark-coffee: #7A4330;
+  --light-coffee: #B56E51;
+  --mocha: #644C2C;
+  --bg-dark: #1F1B16;
+  --text-light: #ffffff;
+  --text-dark: #13131A;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: Arial, sans-serif;
+}
+
+.navbar.bg-coffee {
+  background-color: var(--coffee);
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: var(--text-light) !important;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.bg-dark-coffee {
+  background-color: var(--dark-coffee);
+}
+
+.bg-coffee {
+  background-color: var(--coffee);
+}
+
+.bg-light-coffee {
+  background-color: var(--light-coffee);
+}
+
+.bg-mocha {
+  background-color: var(--mocha);
+}
+
+.table {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th {
+  background-color: var(--coffee);
+  color: var(--text-light);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .table {
+    font-size: 0.95rem; 
+  }
+
+  .row {
+    flex-wrap: wrap; 
+  }
+
+  .col-md-3 {
+    flex: 0 0 50%; 
+    max-width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .card h3 {
+    font-size: 1rem; 
+  }
+
+  .card p {
+    font-size: 0.85rem; 
+  }
+
+  .table {
+    font-size: 0.8rem; 
+  }
+
+  .table th, 
+  .table td {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 10px; 
+  }
+}

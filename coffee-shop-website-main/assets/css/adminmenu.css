@@ -1,0 +1,100 @@
+
+        :root {
+            --coffee: #9F5C44;
+            --dark-coffee: #7A4330;
+            --light-coffee: #B56E51;
+            --mocha: #644C2C;
+            --bg-dark: #1F1B16;
+            --text-light: #ffffff;
+            --text-dark: #13131A;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar.bg-coffee {
+            background-color: var(--coffee);
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            color: var(--text-light) !important;
+        }
+
+        
+
+        .table {
+            background-color: var(--text-light);
+            color: var(--text-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table th {
+            background-color: var(--coffee);
+            color: var(--text-light);
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+          body {
+              font-size: 14px;
+          }
+      
+          .table {
+              font-size: 12px;
+          }
+      
+          .table th, .table td {
+              padding: 8px;
+          }
+      
+          .navbar {
+              flex-wrap: wrap;
+          }
+      
+          .nav-link {
+              font-size: 14px;
+          }
+      
+          img {
+              width: 80px;
+              height: auto;
+          }
+      }
+      
+      @media (max-width: 480px) {
+          body {
+              font-size: 12px;
+          }
+      
+          .table {
+              font-size: 10px;
+          }
+      
+          .table th, .table td {
+              padding: 5px;
+          }
+      
+          h1, h2 {
+              font-size: 18px;
+              text-align: center;
+          }
+      
+          img {
+              width: 60px;
+              height: auto;
+          }
+      
+          .btn {
+              font-size: 10px;
+              padding: 5px 8px;
+          }
+      }
+    
